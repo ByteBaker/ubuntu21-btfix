@@ -31,9 +31,16 @@ tar xfz $OUT_PATH -C $TMP_PATH
 
 sudo cp -rf $TMP_PATH/$EXTR_DIR/ibt-* /lib/firmware/intel/
 
-# cleanup
-sudo rm -rf $TMP_PATH
+if [ $? -eq 0 ]
+then
+	echo -e "\nPatch successful"# cleanup
+	sudo rm -rf $TMP_PATH
 
-echo -e "\nYour computer will reboot now. Save any open work.\nPress any key to reboot..."
-read -p ""
-sudo reboot
+	echo -e "\nYour computer will reboot now. Save any open work.\nPress any key to reboot..."
+	read -p ""
+	sudo reboot
+else
+	echo -e "Sorry! But it didn't work out! Maybe try StackOverflow\n"
+	exit 1
+fi
+

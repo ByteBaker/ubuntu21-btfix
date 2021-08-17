@@ -35,5 +35,5 @@ sudo cp -rf $TMP_PATH/$EXTR_DIR/ibt-* /lib/firmware/intel/
 sudo rm -rf $TMP_PATH
 
 echo -e "\nYour computer will reboot now. Save any open work.\nPress any key to reboot..."
-read -p " "
+read -p ""
 sudo reboot

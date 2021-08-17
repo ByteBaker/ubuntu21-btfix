@@ -33,7 +33,9 @@ sudo cp -rf $TMP_PATH/$EXTR_DIR/ibt-* /lib/firmware/intel/
 
 if [ $? -eq 0 ]
 then
-	echo -e "\nPatch successful"# cleanup
+	echo -e "\nPatch successful"
+	
+	# cleanup
 	sudo rm -rf $TMP_PATH
 
 	echo -e "\nYour computer will reboot now. Save any open work.\nPress any key to reboot..."

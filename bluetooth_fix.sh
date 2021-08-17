@@ -17,7 +17,7 @@ echo "Press any key to continue (or Ctrl+C to exit)..."
 read -p ""
 
 FW_URL="https://raw.githubusercontent.com/ByteBaker/ubuntu21-btfix/main/intel-bt-fw-20210716.tar.gz?raw=true"
-OUTFILE="firmware.zip"
+OUTFILE="firmware.tar.gz"
 EXTR_DIR="ibt"
 
 TMP_PATH=$(mktemp -d -t)

@@ -3,7 +3,7 @@ sudo -v
 if [ $? -eq 1 ]
 then
 	echo -e "\nSuperuser is required to run the script."
-	read -p "Press any key to exit..."
+	read -rsn1 "Press any key to exit..."
 	exit 1
 fi
 
@@ -39,7 +39,7 @@ then
 	sudo rm -rf $TMP_PATH
 
 	echo -e "\nYour computer will reboot now. Save any open work.\nPress any key to reboot..."
-	read -p ""
+	read -rsn1 ""
 	sudo reboot
 else
 	echo -e "Sorry! But it didn't work out! Maybe try StackOverflow\n"

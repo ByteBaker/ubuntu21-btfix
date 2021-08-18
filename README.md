@@ -5,7 +5,12 @@ To help you fix issues with bluetooth on Ubuntu after intel's Feb-21 firmware up
 ```
 source <(curl -s https://raw.githubusercontent.com/ByteBaker/ubuntu21-btfix/main/bluetooth_fix.sh)
 ```
-
+OR
+```
+wget https://raw.githubusercontent.com/ByteBaker/ubuntu21-btfix/main/bluetooth_fix.sh
+chmod +x ./bluetooth_fix.sh
+./bluetooth_fix.sh
+```
 
 
 ## What it does?
